@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./sytles/style.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?98mdaz');
+            src: url('fonts/icomoon.eot?98mdaz#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?98mdaz') format('truetype'),
+                url('fonts/icomoon.woff?98mdaz') format('woff'),
+                url('fonts/icomoon.svg?98mdaz#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+
+    <form action="#">
+        <input type="text">
+        <input type="number" min="1" max="12" placeholder="月" required>
+        <input type="number" min="1" max="31" placeholder="日" required>
+        <button>加入清单</button>
+    </form>
+
+    <br>
+    <br>
+
+    <div class="sort">
+        <button>按时间排序</button>
+    </div>
+    <section>
+        <p></p>
+    </section>
+</body>
+<script src="./app.js"></script>
+
+</html>

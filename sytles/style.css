@@ -1,0 +1,255 @@
+.iconfont {
+  font-family: 'icomoon';
+}
+
+span {
+  pointer-events: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#edf5c3), to(#73d3d8));
+  background: linear-gradient(90deg, #edf5c3, #73d3d8);
+}
+
+header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 3px 3px 20px #65a38a;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+form input, form button {
+  border: none;
+  padding: .25rem 1rem;
+  font-size: 1.25rem;
+  line-height: 45px;
+  margin: .1rem;
+  height: 45px;
+}
+
+form input[type="text"] {
+  border-radius: 25px;
+  margin-right: 1rem;
+  width: 25%;
+  background-color: #eafeff;
+}
+
+form input[type="number"] {
+  width: 50px;
+  text-align: center;
+  padding: .1rem;
+  border-left: 5px solid #7ea5b1;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form button {
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: .5rem;
+  background-color: #00ff95;
+  color: #6a8585;
+  text-align: center;
+  line-height: 1rem;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+form button span {
+  font-family: iconfont;
+}
+
+form button:hover {
+  background-color: #20684c;
+  color: white;
+}
+
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.sort button {
+  border: none;
+  padding: .25rem 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: .5rem;
+  background-color: #00ff95;
+  color: #6a8585;
+  text-align: center;
+  line-height: 2rem;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+div.sort button:hover {
+  background-color: #20684c;
+  color: white;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+section div.toDo {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .2rem 0rem;
+  background-color: #fdfff2;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  position: relative;
+}
+
+section div.toDo p {
+  color: black;
+  padding: 0.25rem .5rem;
+  font-size: 1.75rem;
+}
+
+section div.toDo p.description {
+  width: 50%;
+}
+
+section div.toDo p.time {
+  width: 30%;
+  text-align: center;
+}
+
+section div.toDo button {
+  font-size: 1.75rem;
+  height: 100%;
+  padding: 0rem .5rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+  position: absolute;
+}
+
+section div.toDo button.complete {
+  background-color: #91e0b0;
+  right: 2.75rem;
+}
+
+section div.toDo button.trash {
+  background-color: #df9292;
+  right: 0rem;
+}
+
+section div.toDo button.complete:hover {
+  background-color: #077237;
+}
+
+section div.toDo button.trash:hover {
+  background-color: #720707;
+}
+
+.done {
+  opacity: .5;
+  text-decoration: line-through;
+  text-decoration-thickness: .3rem;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */

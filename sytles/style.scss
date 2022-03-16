@@ -1,0 +1,193 @@
+
+
+.iconfont{
+    font-family: 'icomoon';
+}
+
+span{
+    pointer-events: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient( 90deg,rgb(237, 245, 195),rgb(115, 211, 216));
+}
+
+header{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: white;
+        font-size: 3rem;
+        text-shadow: 3px 3px 20px #65a38a;
+    }
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input, button{
+        border: none;
+        padding: .25rem 1rem;
+        font-size: 1.25rem;
+        line-height: 45px;
+        margin: .1rem;
+        height: 45px;
+    }
+    input[type="text"]{
+        border-radius: 25px;
+        margin-right: 1rem;
+        width: 25%; 
+        background-color: rgb(234, 254, 255);
+    };
+    input[type="number"]{
+        width: 50px;
+        text-align: center;
+        padding: .1rem;
+        border-left: 5px solid rgb(126, 165, 177);
+    }
+
+            /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
+    
+    button{
+        cursor: pointer;
+        border-radius: 15px;
+        margin-left: .5rem;
+        background-color: rgb(0, 255, 149);
+        color: rgb(106, 133, 133);
+        text-align: center; 
+        line-height: 1rem;
+        transition: all .25s ease;
+        span{
+            font-family: iconfont;
+        }
+    }
+
+    button:hover{
+        background-color: rgb(32, 104, 76);
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+div.sort{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+         border: none;
+        padding: .25rem 1rem;
+        font-size: 1.25rem;
+        cursor: pointer;
+        border-radius: 15px;
+        margin-left: .5rem;
+        background-color: rgb(0, 255, 149);
+        color: rgb(106, 133, 133);
+        text-align: center; 
+        line-height: 2rem;
+        transition: all .25s ease;
+    }
+    button:hover{
+        background-color: rgb(32, 104, 76);
+        color: rgb(255, 255, 255);
+    }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    div.toDo{
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        margin: .2rem 0rem;
+        background-color: rgb(253, 255, 242);
+        transition: all .25s ease ;
+        position: relative;
+
+        p{ 
+            color: black;
+            padding: 0.25rem .5rem;
+            font-size: 1.75rem;
+        }
+
+        p.description{
+            width: 50%;
+        }
+
+        p.time{
+            width: 30%;
+            text-align: center;
+        }
+
+        button{
+            font-size: 1.75rem;
+            height: 100%;
+            padding: 0rem .5rem;
+            border: none;
+            cursor: pointer;
+            color: white;
+            transition: all .25s ease-out;
+            position: absolute;
+            
+        }
+        button.complete{
+            background-color: rgb(145, 224, 176);
+            right: 2.75rem;
+        }
+        button.trash{
+            background-color: rgb(223, 146, 146);
+            right: 0rem;
+        }
+        button.complete:hover{
+            background-color: rgb(7, 114, 55);
+        }
+        button.trash:hover{
+            background-color: rgb(114, 7, 7);
+        }
+        
+    }
+    
+}
+
+.done{
+    opacity: .5;
+    text-decoration: line-through;
+    text-decoration-thickness: .3rem;
+}
+
+@keyframes scaleUp{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleDown{
+    to{
+        transform: scale(0);
+    }
+}
